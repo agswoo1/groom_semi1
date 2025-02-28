@@ -16,4 +16,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # ✅ 6. 기본 실행 명령어 (현재 개발 단계에서는 실행 안 하므로 주석 가능)
-# CMD ["python", "src/bot/bot.py"]
+#CMD ["python", "src/bot/bot.py"]

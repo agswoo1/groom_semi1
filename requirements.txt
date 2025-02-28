@@ -2,7 +2,7 @@
 pymongo[srv]  # MongoDB (비동기 지원 X → motor 사용)
 elasticsearch
 
-# ✅ Environment Variable Management
+# ✅ Environment Variable Management(.env 파일실행)
 python-dotenv
 
 # ✅ Web Scraping (Dark Web Crawlers)
@@ -13,7 +13,7 @@ aiosocks  # Tor SOCKS5 프록시 지원
 
 # ✅ Task Scheduling
 APScheduler
-asyncio  # 비동기 실행 필수 라이브러리
+asyncio  # 비동기 실행 필수 라이브러리(기본 내장?)
 
 # ✅ Discord Bot (비동기 방식 지원)
 discord.py
@@ -23,3 +23,9 @@ pyecharts
 
 # ✅ Async Database (MongoDB)
 motor  # pymongo의 비동기 버전 (MongoDB 용)
+
+#텔레그램
+telethon
+
+#시간대 변경
+pytz

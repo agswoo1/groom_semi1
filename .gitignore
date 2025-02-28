@@ -5,20 +5,28 @@ __pycache__/
 *.pyd
 venv/
 env/
+semi1_env/
 *.egg-info/
 
-# 📂 Docker 관련 (로컬 볼륨 데이터 & 컨테이너 로그 제외)
-logs/*.log  # 개별 로그 파일만 제외
+# 📂 Docker 관련
+logs/*.log  
 docker-compose.override.yml
 .env
-!.env.example  # 기본 환경 변수 템플릿 유지
+!.env.example  
 
-# 📂 MongoDB 관련 (데이터베이스 스키마는 공유하지만, 실제 데이터는 제외)
-data/mongodb/  # 실제 데이터 파일 제외 (모든 팀원이 동일한 DB 스키마를 사용하도록 초기화 스크립트 제공)
-!init-mongo.js  # Git에 포함하여 초기 데이터베이스 설정 유지
+# 📂 MongoDB 관련
+data/mongodb/  
+!init-mongo.js  
+data/mongodb/mongod.lock  
+data/mongodb/*.wt  
+data/mongodb/journal/  
+data/mongodb/diagnostic.data/  
 
 # 📂 Elasticsearch 관련
-data/elasticsearch/  # 실제 Elasticsearch 데이터 제외
+data/elasticsearch/  
+data/elasticsearch/node.lock  
+data/elasticsearch/snapshot_cache/  
+data/elasticsearch/indices/  
 
 # 📂 VSCode / JetBrains / 기타 개발 환경
 .vscode/
@@ -28,3 +36,8 @@ data/elasticsearch/  # 실제 Elasticsearch 데이터 제외
 # 📂 OS 관련 (Mac / Windows)
 .DS_Store
 Thumbs.db
+
+# 📂 세션 및 기타 불필요한 파일
+session_name.session
+session_name.session-journal
+*.session-journal
