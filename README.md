@@ -14,6 +14,6 @@ source (가상환경 이름)/bin/activate
 종료
 deactivate
 
-terminal에서 python src/main.py 명령어 실행
+터미널에서 python src/main.py 명령어 실행
 
-추가적으로 설치해야하는 패키지 있을 수 있음!
+추가적으로 설치해야하는 패키지 있음
