@@ -2,9 +2,7 @@ groom semi project 1
 
 docker-compose down # 도커 종료
 
-docker-compose stop
-
-docker-compose start
+docker ps -a 현재 실행주인 도커
 
 docker-compose up -d # 도커 실행
 
